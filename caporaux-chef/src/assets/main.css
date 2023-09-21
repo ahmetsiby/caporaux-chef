@@ -1,0 +1,18 @@
+@import url(./btn.css);
+@import url(./card.css);
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+    cursor: pointer;
+ }
+
+ a{
+    text-decoration: none;
+    color: inherit;
+    color: azure;
+    cursor: pointer;
+ }

@@ -1,0 +1,48 @@
+
+.btn{
+    position: relative;
+    background-color: rgba(144, 144, 144, 0.087);
+    border-radius: 5px;
+    padding: 4px 8px;
+    border: 0.5px solid black;
+    cursor: pointer;
+}
+.btn::after{
+    transition: all 1s ease-in-out;
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    height: 100%;
+    width: 0;
+}
+.btn::before{
+    transition: all 1s ease-in-out;
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: -1px;
+    right: -1px;
+    width: 0;
+}
+
+.btn:hover{
+    background: linear-gradient(to right, rgba(0, 128, 0, 0.332), rgba(255, 0, 0, 0.406));
+    transition: all 1s ease-in-out;
+}
+.btn:hover::after{
+    border-top: 2px solid green;
+    border-left: 2px solid green;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 1s ease-in-out;
+}
+.btn:hover::before{
+    width: 100%;
+    border-bottom: 2px solid red;
+    border-right: 2px solid red;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: all 1s ease-in-out;
+    
+}

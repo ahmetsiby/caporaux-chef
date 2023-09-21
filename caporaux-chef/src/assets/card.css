@@ -1,0 +1,71 @@
+.card-d{
+    max-width: 380px;
+    transition: all 0.5s ;
+    margin: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.321);
+    background-color: rgba(144, 144, 144, 0.087);
+}
+.card-d:hover{
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.564);
+    transform: scale(1.1);
+    transition: all 0.5s ;
+}
+.card-d .image img{
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px 5px 0 0;
+    padding: 0;
+    margin: 0;
+}
+.card-d .body{
+    position: relative;
+    padding: 5px;
+    
+}
+.card-d .body .title h4{
+    color: rgba(61, 60, 60, 0.792);
+    padding: 5px 0;
+    margin: 0;
+    margin-left:  auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.card-d .body .texte p {
+    color: rgba(61, 60, 60, 0.792);
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+
+hr{
+    width: 70%;
+   border: 0px solid transparent;
+}
+hr::after{
+    position: absolute;
+    content: "";
+    width: 70%;
+    left: 15%;
+    height: 0px;
+    border: 0.5px solid rgb(250, 5, 5);
+}
+hr::before{
+    position: absolute;
+    content: "";
+    width: 70%;
+    left: 15%;
+    height: 0px;
+    border: 0.5px solid rgb(136, 253, 2);
+}
+.card-d .footer{
+    padding: 10px 0 ;
+}
